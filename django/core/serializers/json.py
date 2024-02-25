@@ -32,6 +32,7 @@ class Serializer(PythonSerializer):
         self.json_kwargs.setdefault("ensure_ascii", False)
 
     def start_serialization(self):
+        
         self._init_options()
         self.stream.write("[")
 
